@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Grandmacoin - Brought to you by Grandma Liz</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Grandmacoin - The cutest memecoin on pump.fun, baked by Grandma Liz. Live stream, token info, and community.">
+  <meta name="keywords" content="Grandmacoin, memecoin, pump.fun, Grandma Liz, crypto, twitch">
+  <meta name="author" content="Grandma Liz">
+  <title>Grandmacoin - Baked by Grandma Liz</title>
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- Fixed Navbar -->
@@ -27,36 +32,28 @@
     </nav>
   </header>
 
-  <!-- Twitch Section - First content section on the page -->
-  <section id="twitch" class="twitch-section">
-    <h2 class="section-title">Live from Grandma's Kitchen</h2>
-    <div class="twitch-embed">
-      <iframe
-        src="https://player.twitch.tv/?channel=grandmacoinlive&parent=localhost&muted=false"
-        frameborder="0"
-        allowfullscreen="true"
-        scrolling="no"
-        style="width:100%; height:500px; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.2);"
-      ></iframe>
-    </div>
-    <div class="twitch-info">
-      <p>Join Grandma Liz live every Tuesday & Thursday at 3 PM EST — baking cookies and learning crypto!</p>
-      <a href="https://twitch.tv/grandmacoin" target="_blank" class="cta-button" style="margin-top:1rem;">
-        <i class="fab fa-twitch"></i> <span>Follow on Twitch</span>
-      </a>
-    </div>
-  </section>
-
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
       <span class="badge" style="background:var(--accent); color:white; padding:0.5rem 1rem; border-radius:50px; font-size:1rem;">
-        🍪 LIVING ON pump.fun
+        🍪 LIVE ON pump.fun
       </span>
       <h1>Grandmacoin</h1>
       <p class="subtitle">The cutest memecoin on pump.fun — baked by Grandma Liz.</p>
       <a href="https://pump.fun" target="_blank" class="cta-button"><span>Buy on pump.fun</span></a>
       <a href="about.html" class="cta-button secondary"><span>Meet Grandma</span></a>
+    </div>
+  </section>
+
+  <!-- Twitch Section -->
+  <section id="twitch" class="twitch-section">
+    <h2 class="section-title">Live from Grandma's Kitchen</h2>
+    <div class="twitch-embed"></div>
+    <div class="twitch-info">
+      <p>Join Grandma Liz live every Tuesday & Thursday at 3 PM EST — baking cookies and learning crypto!</p>
+      <a href="https://twitch.tv/grandmacoin" target="_blank" class="cta-button" style="margin-top:1rem;">
+        <i class="fab fa-twitch"></i> <span>Follow on Twitch</span>
+      </a>
     </div>
   </section>
 
@@ -71,12 +68,12 @@
         <p>P.S. I still don’t know what “liquidity” means, but Jimmy says we’re safe. 😊</p>
       </div>
       <div class="about-image">
-        <img src="454266185_122106512210446521_6181295686651273428_n.png" alt="Grandma Liz">
+        <img src="https://images.unsplash.com/photo-1573496359148-b7d088f24604?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Grandma Liz baking">
       </div>
     </div>
   </section>
 
-  <!-- Tokenomics Section -->
+  <!-- Token Info -->
   <section id="tokenomics" class="tokenomics">
     <h2 class="section-title">Token Info</h2>
     <div class="token-grid">
@@ -102,31 +99,32 @@
       </div>
     </div>
 
-    <div class="countdown" style="margin-top: 3rem;">
-  <h3>Next Grandma's Giveaway in:</h3>
-  <div class="countdown-timer">
-    <div class="countdown-item">
-      <div class="countdown-number" id="days">03</div>
-      <div class="countdown-label">Days</div>
+    <!-- Countdown -->
+    <div class="countdown" style="margin-top: 4rem;">
+      <h3>Next Grandma's Giveaway in:</h3>
+      <div class="countdown-timer">
+        <div class="countdown-item">
+          <div class="countdown-number" id="days">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="minutes">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="seconds">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+      <p id="countdown-message">Grandma will randomly airdrop GMC to holders!</p>
     </div>
-    <div class="countdown-item">
-      <div class="countdown-number" id="hours">00</div>
-      <div class="countdown-label">Hours</div>
-    </div>
-    <div class="countdown-item">
-      <div class="countdown-number" id="minutes">00</div>
-      <div class="countdown-label">Minutes</div>
-    </div>
-    <div class="countdown-item">
-      <div class="countdown-number" id="seconds">00</div>
-      <div class="countdown-label">Seconds</div>
-    </div>
-  </div>
-  <p id="countdown-message">Grandma will randomly airdrop GMC to holders!</p>
-</div>
   </section>
 
-  <!-- Community Section -->
+  <!-- Community -->
   <section id="community" class="community">
     <h2 class="section-title">Join the Family</h2>
     <p>Grandmacoin is built on kindness, fun, and community.</p>
@@ -151,11 +149,35 @@
         <li><a href="https://pump.fun" target="_blank">Buy</a></li>
       </ul>
       <div class="disclaimer">
-        Grandmacoin is a meme coin on pump.fun. No financial advice. 100% community-driven. For entertainment only.
+        Website: <a href="https://grandmacoin.live" style="color:var(--accent);">https://grandmacoin.live</a> | 
+        Token on pump.fun. Not financial advice. For entertainment only.
       </div>
     </div>
   </footer>
 
+  <!-- Twitch Embed Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const twitchEmbed = document.querySelector('.twitch-embed');
+      if (twitchEmbed && !twitchEmbed.querySelector('iframe')) {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://player.twitch.tv/?channel=grandmacoin&parent=' + 
+                     encodeURIComponent(window.location.hostname) + 
+                     '&muted=false&autoplay=true';
+        iframe.frameBorder = '0';
+        iframe.allow = 'autoplay; fullscreen; encrypted-media';
+        iframe.title = "Grandma Liz Live on Twitch";
+        iframe.style.width = '100%';
+        iframe.style.height = '500px';
+        iframe.style.borderRadius = '15px';
+        iframe.style.boxShadow = '0 10px 30px rgba(0,0,0,0.2)';
+        iframe.style.border = 'none';
+        twitchEmbed.appendChild(iframe);
+      }
+    });
+  </script>
+
+  <!-- Main Script -->
   <script src="js/script.js"></script>
 </body>
 </html>
