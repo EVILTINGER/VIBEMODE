@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Token Info - Grandmacoin</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Fixed Navbar -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <i class="fas fa-cookie"></i> GRANDMACOIN
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tokenomics.html" class="active">Token Info</a></li>
+        <li><a href="https://pump.fun" target="_blank">Buy on pump.fun</a></li>
+      </ul>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge" style="background:var(--accent); color:white; padding:0.5rem 1rem; border-radius:50px; font-size:1rem;">
+        🍪 LIVE ON pump.fun
+      </span>
+      <h1>Token Info</h1>
+      <p class="subtitle">Everything you need to know about Grandmacoin — baked fresh by Grandma Liz.</p>
+    </div>
+  </section>
+
+  <!-- Twitch Section (Optional: Keep it high up) -->
+  <section id="twitch" class="twitch-section">
+    <h2 class="section-title">Watch Grandma Live</h2>
+    <div class="twitch-embed"></div>
+    <div class="twitch-info">
+      <p>Tune in every Tuesday & Thursday — Grandma Liz goes live to chat, bake, and celebrate holders!</p>
+      <a href="https://twitch.tv/grandmacoinlive" target="_blank" class="cta-button" style="margin-top:1rem;">
+        <i class="fab fa-twitch"></i> <span>Follow on Twitch</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Token Info Cards -->
+  <section id="tokenomics" class="tokenomics">
+    <h2 class="section-title">Grandmacoin Details</h2>
+    <div class="token-grid">
+      <div class="token-item">
+        <i class="fas fa-fire"></i>
+        <h3>Live</h3>
+        <p>On <strong>pump.fun</strong></p>
+      </div>
+      <div class="token-item">
+        <i class="fas fa-users"></i>
+        <h3>Fair Launch</h3>
+        <p>No presale, no dev tokens</p>
+      </div>
+      <div class="token-item">
+        <i class="fas fa-cookie"></i>
+        <h3>1,000,000,000</h3>
+        <p>Total Supply</p>
+      </div>
+      <div class="token-item">
+        <i class="fas fa-heart"></i>
+        <h3>100% Community</h3>
+        <p>Just love and cookies</p>
+      </div>
+    </div>
+
+    <!-- Contract Info -->
+    <div style="margin-top: 4rem; text-align: center;">
+      <h3 style="color: var(--primary);">Contract Address</h3>
+      <code style="background: #eee; padding: 1rem 2rem; border-radius: 10px; font-size: 1.1rem; word-break: break-all;">
+        0x7d43AABCd9EC254dE09e20bB7f93b6A1c7a874D1
+      </code>
+      <p style="margin-top: 1rem; font-size: 1.1rem;">Token: <strong>GMC</strong> | Chain: <strong>BSC</strong></p>
+    </div>
+  </section>
+
+  <!-- How to Buy -->
+  <section class="how-to-buy" style="padding: 5rem 5%; background: var(--secondary); text-align: center;">
+    <h2 class="section-title" style="color: var(--dark);">How to Buy Grandmacoin</h2>
+    <ol style="max-width: 600px; margin: 2rem auto; text-align: left; font-size: 1.2rem; line-height: 2.5; color: var(--dark);">
+      <li>Install <strong>MetaMask</strong> or <strong>Trust Wallet</strong></li>
+      <li>Buy <strong>BNB</strong> or <strong>ETH</strong></li>
+      <li>Go to <strong><a href="https://pump.fun" target="_blank" style="color:var(--primary); text-decoration:underline;">pump.fun</a></strong></li>
+      <li>Connect your wallet</li>
+      <li>Paste the contract address above</li>
+      <li>Swap and enjoy!</li>
+    </ol>
+    <a href="https://pump.fun" target="_blank" class="cta-button" style="margin-top: 2rem;">
+      <span>Buy on pump.fun</span>
+    </a>
+  </section>
+
+  <!-- Countdown -->
+  <section class="countdown-section" style="padding: 5rem 5%; background: var(--light);">
+    <h2 class="section-title">Next Cookie Airdrop</h2>
+    <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem;">
+      Grandma Liz will randomly airdrop <strong>10 million GMC</strong> to lucky holders!
+    </p>
+    <div class="countdown-timer">
+      <div class="countdown-item">
+        <div class="countdown-number" id="days">07</div>
+        <div class="countdown-label">Days</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number" id="hours">14</div>
+        <div class="countdown-label">Hours</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number" id="minutes">22</div>
+        <div class="countdown-label">Minutes</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-number" id="seconds">38</div>
+        <div class="countdown-label">Seconds</div>
+      </div>
+    </div>
+    <p id="countdown-message" style="text-align: center; margin-top: 1.5rem; font-size: 1.1rem;">
+      Stay tuned — cookies are coming!
+    </p>
+  </section>
+
+  <!-- Community -->
+  <section id="community" class="community">
+    <h2 class="section-title">Join the Family</h2>
+    <p>Grandmacoin is built on kindness, fun, and community.</p>
+    <ul class="social-links">
+      <li><a href="https://twitter.com/grandmacoin" target="_blank" class="twitter"><i class="fab fa-x-twitter"></i></a></li>
+      <li><a href="https://t.me/grandmacoin" target="_blank" class="telegram"><i class="fab fa-telegram-plane"></i></a></li>
+      <li><a href="https://reddit.com/r/Grandmacoin" target="_blank" class="reddit"><i class="fab fa-reddit-alien"></i></a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-cookie"></i> GRANDMACOIN
+      </div>
+      <p>Made with love by Grandma Liz &copy; <span id="year">2024</span></p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tokenomics.html">Token Info</a></li>
+        <li><a href="https://pump.fun" target="_blank">Buy</a></li>
+      </ul>
+      <div class="disclaimer">
+        Grandmacoin is a meme coin on pump.fun. No financial advice. 100% community-driven. For entertainment only.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
